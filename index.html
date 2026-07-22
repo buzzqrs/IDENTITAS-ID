@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>IDENTITAS.ID</title>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <link rel="stylesheet" href="./src/output.css">
 
 </head>
@@ -32,15 +32,19 @@ IDENTITAS<span class="text-[#D0311E]">.ID</span>
 <div class="hidden md:flex gap-8 font-semibold">
 
 <a class="hover:text-[#BE1A1A]" href="#">
-Beranda
+Home
 </a>
 
 <a class="hover:text-[#BE1A1A]" href="#tentang">
-Tentang
+About
 </a>
 
 <a class="hover:text-[#BE1A1A]" href="#materi">
 Materi
+</a>
+
+<a class="hover:text-[#BE1A1A]" href="#kontak">
+Contact Us
 </a>
 
 </div>
@@ -49,7 +53,7 @@ Materi
 <a href="belajar.html"
 class="bg-[#BE1A1A] text-white px-6 py-3 rounded-full shadow-lg hover:bg-[#D0311E]">
 
-Mulai Jelajah
+Mulai Belajar
 
 </a>
 
@@ -109,9 +113,11 @@ dan simbol negara Indonesia.
 
 <div class="mt-10 flex gap-5">
 
-<button class="bg-[#F8EBAB] text-[#BE1A1A] px-8 py-4 rounded-full font-bold shadow-xl">
+<button class="bg-[#F8EBAB] text-[#BE1A1A] font-black px-6 py-3 rounded-full shadow-lg hover:bg-[#D0311E]">
 
-Mulai Belajar
+<a href="belajar.html">Mulai Belajar</a>
+
+
 
 </button>
 
@@ -397,28 +403,98 @@ Warisan budaya Indonesia.
 
 </section>
 
+<!-- FOOTER -->
+<footer id="kontak" class="bg-slate-900 text-gray-300">
 
+    <div class="max-w-7xl mx-auto px-6 py-20">
 
+        <div class="grid lg:grid-cols-3 gap-16">
 
+            <!-- Logo -->
+            <div>
 
+                <h2 class="text-4xl font-black text-white">
+                    <span class="text-[#BE1A1A]">IDENTITAS.ID</span>
+                </h2>
 
+                <p class="mt-6 leading-8 text-gray-400 text-lg">
+                    Platform edukasi interaktif untuk memperkuat identitas nasional
+                    generasi muda Indonesia melalui pembelajaran yang modern,
+                    menarik, dan mudah dipahami.
+                </p>
+            </div>
+            <!-- Sections -->
+            <div>
+                <h3 class="text-4xl font-black text-[#BE1A1A] mb-4">
+                    SECTION
+                </h3>
 
-<footer class="bg-[#3b1a12] text-[#F8EBAB] py-10 text-center">
+                <ul class="space-y-6 text-lg mt-4">
 
-<h3 class="text-2xl font-bold">
+                    <li>
+                        <a href="#" class="hover:text-[#F7D87F] transition">
+                            Beranda
+                        </a>
+                    </li>
 
-IDENTITAS.ID
+                    <li>
+                        <a href="#tentang" class="hover:text-[#F7D87F] transition">
+                            Tentang
+                        </a>
+                    </li>
 
-</h3>
+                    <li>
+                        <a href="#materi" class="hover:text-[#F7D87F] transition">
+                            Materi
+                        </a>
+                    </li>
 
-<p class="mt-3">
-Membangun generasi muda dengan identitas bangsa.
-</p>
+                    <li>
+                        <a href="belajar.html" class="hover:text-[#F7D87F] transition">
+                            Mulai Belajar
+                        </a>
+                    </li>
 
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+            <div>
+
+                <h3 class="text-4xl font-black text-[#BE1A1A] mb-8">
+                    Contact Us
+                </h3>
+
+                <div class="space-y-6 text-lg">
+
+                    <div class="flex items-center gap-4 mt-4">
+                        <i class="fa-solid fa-envelope text-[#F7D87F] text-xl"></i>
+                        <span>identitasid@gmail.com</span>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <i class="fa-solid fa-phone text-[#F7D87F] text-xl"></i>
+                        <a href="https://wa.me/6283847404877?text=Halo Kak, Saya Ingin Bertanya..."
+                        target="_blank"> 
+                        <span>+62 812-3456-7890</span>
+                        </a>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <i class="fa-solid fa-location-dot text-[#F7D87F] text-xl"></i>
+                        <span>Bali, Indonesia</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </footer>
-
-
 
 </body>
 

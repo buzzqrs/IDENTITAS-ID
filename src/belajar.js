@@ -1,3 +1,4 @@
+
 const soal = [
 
 {
@@ -246,3 +247,64 @@ document.querySelector("#score")
 
 
 tampilkanSoal();
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.remove("opacity-0", "translate-y-8");
+            entry.target.classList.add("opacity-100", "translate-y-0");
+        }
+    });
+}, {
+    threshold: 0.15,
+});
+
+document.querySelectorAll(".animate-card").forEach((card) => {
+    observer.observe(card);
+});
+
+// ==========================
+// ACCORDION
+// ==========================
+
+const accordionButtons =
+document.querySelectorAll(".accordion-btn");
+
+accordionButtons.forEach((button)=>{
+
+button.addEventListener("click",()=>{
+
+const content =
+button.nextElementSibling;
+
+const icon =
+button.querySelector("span:last-child");
+
+document.querySelectorAll(".accordion-content").forEach((item)=>{
+
+if(item!==content){
+
+item.classList.add("hidden");
+
+}
+
+});
+
+document.querySelectorAll(".accordion-btn span:last-child").forEach((i)=>{
+
+if(i!==icon){
+
+i.innerHTML="+";
+
+}
+
+});
+
+content.classList.toggle("hidden");
+
+icon.innerHTML=
+content.classList.contains("hidden") ? "+" : "−";
+
+});
+
+});
